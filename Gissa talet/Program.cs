@@ -28,7 +28,7 @@ namespace Gissa_talet
 
                 string ändraTal = "0";
 
-                while (menyVal != "5")
+                while (menyVal != "6")
                 { 
 
                 //Skriv en meny
@@ -36,7 +36,7 @@ namespace Gissa_talet
                 Console.WriteLine("2. Hur spelar man gissa talet?");
                 Console.WriteLine("3. Senaste vinnaren");
                 Console.WriteLine("4. Avsluta programmet");
-                    Console.WriteLine("5. Ändra talet");
+                Console.WriteLine("5. Ändra talet");
 
                 menyVal = Console.ReadLine();
 
@@ -124,17 +124,13 @@ namespace Gissa_talet
                             break;
 
                         case "5":
-                            while (ändraTal != "2")
-                                
+                            while (ändraTal != "2")                             
                             {
-                                Console.WriteLine("1. Ändra max värdet från 10 till ett nytt tal");
-                                Console.WriteLine("2. Gå tillbaks till spelet");
-                                ändraTal = (Console.ReadLine();
+                                Console.WriteLine($"Ändra max värdet från {max - 1} till ett nytt tal");
 
-                               if (ändraTal = "1") 
+                                max = (int.Parse(Console.ReadLine())) + 1;
 
-
-                                    break;
+                                break;
                             }
                             break;
 
